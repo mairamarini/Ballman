@@ -1,11 +1,8 @@
 package org.academiadecodigo.asciimos.ballman.game.gameobjects.factory;
 
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.Pokemon;
+public abstract class Objectfactory {
 
-public class Objectfactory {
-
-    private Pokemon pokemon = new Pokemon();
-    private Position position = new Position();
-    private Ball ball = new Ball();
+    public static Position getPosition() {
+        return new Position(RandomCoordinate.getRandomCoordinateX(),RandomCoordinate.getRandomCoordinateY());
+    }
 }
