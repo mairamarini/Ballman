@@ -21,12 +21,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Pokemon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="252">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,8 +37,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Collidable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="84">
+              <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,28 +72,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Grid.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Movable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#1152#1153#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="56">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Objectfactory.java">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="393">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,28 +109,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Player.java">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Ball.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ArabianNights/src/org/academiadecodigo/bootcamp22/arabiannights/MagicLamp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="28">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -129,16 +120,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+            <state relative-caret-position="98">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
-                <element signature="e#563#564#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#724#725#0" expanded="true" />
+                <element signature="e#756#757#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,6 +143,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fill</find>
+      <find>f</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -172,16 +167,16 @@
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/KeyHandler.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/KeyboardHandler.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/Main.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Movable.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Pokemon.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Directions.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Collidable.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Objectfactory.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/RandomCoordinate.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Position.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Player.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Grid.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Movable.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Collidable.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Pokemon.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Player.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java" />
       </list>
     </option>
   </component>
@@ -248,10 +243,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549573800474" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549579971053" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ArabianNights/src/org/academiadecodigo/bootcamp22/arabiannights/MagicLamp.java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -296,17 +292,17 @@
       <option name="presentableId" value="Default" />
       <updated>1549491465370</updated>
       <workItem from="1549491469655" duration="3259000" />
-      <workItem from="1549556048796" duration="17545000" />
+      <workItem from="1549556048796" duration="23070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20804000" />
+    <option name="totallyTimeSpent" value="26329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-14" width="1368" height="783" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1491754" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1491754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -316,7 +312,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.32884902" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,13 +368,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Ball.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://MODULES/mdl-Ballman">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -471,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/simplegraphics.jar!/org/academiadecodigo/simplegraphics/graphics/Rectangle.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/simplegraphics.jar!/org/academiadecodigo/simplegraphics/keyboard/Keyboard.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -506,23 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Movable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Pokemon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/simplegraphics.jar!/org/academiadecodigo/simplegraphics/mouse/Mouse.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -541,13 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/GameObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -579,15 +537,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/RandomCoordinate.java">
+    <entry file="jar://$PROJECT_DIR$/lib/simplegraphics.jar!/org/academiadecodigo/simplegraphics/graphics/Rectangle.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        <state relative-caret-position="84">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
           <folding>
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#682#683#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -601,17 +568,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        <state relative-caret-position="98">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/RandomCoordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Ball.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/GameObjects.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -630,50 +622,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Movable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="56">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Pokemon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
+        <state relative-caret-position="252">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Collidable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="84">
+          <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Grid.java">
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="393">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="35" column="16" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

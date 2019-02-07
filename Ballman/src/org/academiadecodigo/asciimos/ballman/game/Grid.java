@@ -19,18 +19,6 @@ public class Grid {
     }
 
     public void drawPlayer(Player player) {
-
-        System.out.println(player.getPosition().getRectangle().getX());
-        System.out.println(rectangle.getWidth());
-
-        if(player.getPosition().getRectangle().getY() >= rectangle.getHeight() + PADDING ||
-           player.getPosition().getRectangle().getX() >= rectangle.getWidth() + PADDING) {
-
-            //player.getPosition().getRectangle().delete();
-
-            return;
-        }
-
         player.getPosition().getRectangle().fill();
     }
 

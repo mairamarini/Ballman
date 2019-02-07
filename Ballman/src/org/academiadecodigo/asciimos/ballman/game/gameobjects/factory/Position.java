@@ -5,14 +5,15 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Position {
 
-    Rectangle rectangle;
+    private Rectangle rectangle;
 
     public Position(int x, int y) {
         rectangle = new Rectangle(10,10, Grid.CELL_SIZE,Grid.CELL_SIZE);
     }
 
     public void setCoordinates(int x, int y) {
-        rectangle.translate(x,y);
+        rectangle.delete();
+        rectangle = new Rectangle(rectangle.getX() + x,rectangle.getY() + y,Grid.CELL_SIZE,Grid.CELL_SIZE);
     }
 
     public Rectangle getRectangle() {

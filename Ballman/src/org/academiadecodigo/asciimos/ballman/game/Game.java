@@ -29,12 +29,49 @@ public class Game implements KeyboardHandler {
 
         keyboard = createListenerEvents(keyboard,keyboardEvents);
 
-        draw();
+        drawStartingGame();
 
         while (true) {
 
             Thread.sleep(SLEEP);
+
+            // TODO: 07-02-2019 move all pokemons here!!
+
         }
+    }
+
+    @Override
+    public void keyPressed(KeyboardEvent keyboardEvent) {
+
+        if(player.collide(grid,keyboardEvent)) {
+            return;
+        }
+
+        switch (keyboardEvent.getKey()) {
+            case KeyboardEvent.KEY_RIGHT:
+                player.move(Grid.CELL_SIZE, 0);
+                break;
+
+            case KeyboardEvent.KEY_LEFT:
+                player.move(-Grid.CELL_SIZE, 0);
+                break;
+
+            case KeyboardEvent.KEY_DOWN:
+                player.move(0,Grid.CELL_SIZE);
+                break;
+
+            case KeyboardEvent.KEY_UP:
+                player.move(0, -Grid.CELL_SIZE);
+                break;
+
+        }
+
+        grid.drawPlayer(player);
+    }
+
+    private void drawStartingGame() {
+        grid.drawGrid();
+        grid.drawPlayer(player);
     }
 
     private KeyboardEvent[] createKeyboardEvents(KeyboardEvent[] keyboardEvents) {
@@ -57,38 +94,6 @@ public class Game implements KeyboardHandler {
         }
 
         return keyboard;
-    }
-
-    private void draw() {
-        grid.drawGrid();
-        grid.drawPlayer(player);
-    }
-
-    @Override
-    public void keyPressed(KeyboardEvent keyboardEvent) {
-
-        switch (keyboardEvent.getKey()) {
-            case KeyboardEvent.KEY_RIGHT:
-                player.updatePosition(Grid.CELL_SIZE, 0);
-                break;
-
-            case KeyboardEvent.KEY_LEFT:
-                player.updatePosition(-Grid.CELL_SIZE, 0);
-                break;
-
-            case KeyboardEvent.KEY_DOWN:
-                player.updatePosition(0,Grid.CELL_SIZE);
-                break;
-
-            case KeyboardEvent.KEY_UP:
-                player.updatePosition(0, -Grid.CELL_SIZE);
-                break;
-
-            case KeyboardEvent.KEY_SPACE:
-                break;
-        }
-
-        grid.drawPlayer(player);
     }
 
     @Override
