@@ -13,7 +13,8 @@ public class Game implements KeyboardHandler {
     private Pokemon[] pokemons;
     private Ball ball;
     private Player player;
-    private static final int SLEEP = 500;
+    private KeyboardEvent keyboardEvent;
+    private static final int SLEEP = 100;
 
     public Game() {
         grid = new Grid();
@@ -33,6 +34,11 @@ public class Game implements KeyboardHandler {
 
         while (true) {
 
+            if(keyboardEvent != null) {
+                checkKeyboardEvent();
+                keyboardEvent = null;
+            }
+
             Thread.sleep(SLEEP);
 
             // TODO: 07-02-2019 move all pokemons here!!
@@ -40,8 +46,7 @@ public class Game implements KeyboardHandler {
         }
     }
 
-    @Override
-    public void keyPressed(KeyboardEvent keyboardEvent) {
+    private void checkKeyboardEvent() {
 
         if(player.collide(grid,keyboardEvent)) {
             return;
@@ -67,6 +72,12 @@ public class Game implements KeyboardHandler {
         }
 
         grid.drawPlayer(player);
+    }
+
+    @Override
+    public void keyPressed(KeyboardEvent keyboardEvent) {
+
+         this.keyboardEvent = keyboardEvent;
     }
 
     private void drawStartingGame() {
