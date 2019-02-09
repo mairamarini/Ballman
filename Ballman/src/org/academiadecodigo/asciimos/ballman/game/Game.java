@@ -21,7 +21,7 @@ public class Game implements KeyboardHandler {
         player = new Player();
     }
 
-    public void starGame() throws InterruptedException {
+    public void startGame() throws InterruptedException {
 
         Keyboard keyboard = new Keyboard(this);
         KeyboardEvent[] keyboardEvents = new KeyboardEvent[Directions.getSize()];
