@@ -3,9 +3,12 @@ package org.academiadecodigo.asciimos.ballman.game.gameobjects.factory;
 import org.academiadecodigo.asciimos.ballman.game.Grid;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
+import java.security.PublicKey;
+
 public class Position {
 
     private Rectangle rectangle;
+    private Rectangle ball;
 
     public Position(int x, int y) {
         rectangle = new Rectangle(10,10, Grid.CELL_SIZE,Grid.CELL_SIZE);
@@ -19,5 +22,7 @@ public class Position {
     public Rectangle getRectangle() {
         return rectangle;
     }
+
+
 
 }

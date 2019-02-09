@@ -2,10 +2,14 @@ package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Pokemon;
+import org.academiadecodigo.simplegraphics.graphics.Color;
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+
+import java.awt.*;
 
 public class Game implements KeyboardHandler {
 
@@ -19,6 +23,7 @@ public class Game implements KeyboardHandler {
     public Game() {
         grid = new Grid();
         player = new Player();
+        ball = new Ball();
     }
 
     public void startGame() throws InterruptedException {
@@ -28,13 +33,13 @@ public class Game implements KeyboardHandler {
 
         keyboardEvents = createKeyboardEvents(keyboardEvents);
 
-        keyboard = createListenerEvents(keyboard,keyboardEvents);
+        keyboard = createListenerEvents(keyboard, keyboardEvents);
 
         drawStartingGame();
 
         while (true) {
 
-            if(keyboardEvent != null) {
+            if (keyboardEvent != null) {
                 checkKeyboardEvent();
                 keyboardEvent = null;
             }
@@ -48,7 +53,7 @@ public class Game implements KeyboardHandler {
 
     private void checkKeyboardEvent() {
 
-        if(player.collide(grid,keyboardEvent)) {
+        if (player.collide(grid, keyboardEvent)) {
             return;
         }
 
@@ -62,7 +67,7 @@ public class Game implements KeyboardHandler {
                 break;
 
             case KeyboardEvent.KEY_DOWN:
-                player.move(0,Grid.CELL_SIZE);
+                player.move(0, Grid.CELL_SIZE);
                 break;
 
             case KeyboardEvent.KEY_UP:
@@ -74,10 +79,26 @@ public class Game implements KeyboardHandler {
         grid.drawPlayer(player);
     }
 
+
+    public void checkKeyboardEventBall() {
+
+
+
+        case KeyboardEvent.KEY_SPACE:
+
+        Rectangle ball = new Rectangle(player.getPosition().getRectangle().getX(),
+                player.getPosition().getRectangle().getY(), 10, 10);
+        ball.delete();
+        ball.draw();
+        break;
+
+    }
+
+
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
 
-         this.keyboardEvent = keyboardEvent;
+        this.keyboardEvent = keyboardEvent;
     }
 
     private void drawStartingGame() {
@@ -108,5 +129,6 @@ public class Game implements KeyboardHandler {
     }
 
     @Override
-    public void keyReleased(KeyboardEvent keyboardEvent) {}
+    public void keyReleased(KeyboardEvent keyboardEvent) {
+    }
 }
