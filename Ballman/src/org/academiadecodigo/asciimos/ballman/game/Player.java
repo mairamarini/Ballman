@@ -16,6 +16,8 @@ public class Player implements Movable, Collidable {
         return position;
     }
 
+
+
     @Override
     public void move(int dx, int dy) {
         position.setCoordinates(dx,dy);
