@@ -15,6 +15,7 @@ public class Game implements KeyboardHandler {
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 100;
+    private int numberPokemons = 10;
 
     public Game() {
         grid = new Grid();
@@ -84,7 +85,10 @@ public class Game implements KeyboardHandler {
     private void drawStartingGame() {
         grid.drawGrid();
         grid.drawPlayer(player);
-        grid.drawPokemon();
+        for (int i= 1; i <= numberPokemons; i++) {
+            Pokemon.getNewPokemon(grid);
+        }
+
     }
 
     private KeyboardEvent[] createKeyboardEvents(KeyboardEvent[] keyboardEvents) {

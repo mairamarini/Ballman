@@ -29,20 +29,5 @@ public class Grid {
         rectangle.draw();
     }
 
-    public void drawPokemon() {
 
-        Rectangle pokemon1 = new Rectangle(RandomCoordinate.getRandomCoordinateX(),RandomCoordinate.getRandomCoordinateY(),Grid.CELL_SIZE,Grid.CELL_SIZE);
-        Rectangle pokemon2 = new Rectangle(RandomCoordinate.getRandomCoordinateX(),RandomCoordinate.getRandomCoordinateY(),Grid.CELL_SIZE,Grid.CELL_SIZE);
-        Rectangle pokemon3 = new Rectangle(RandomCoordinate.getRandomCoordinateX(),RandomCoordinate.getRandomCoordinateY(),Grid.CELL_SIZE,Grid.CELL_SIZE);
-        Rectangle pokemon4 = new Rectangle(RandomCoordinate.getRandomCoordinateX(),RandomCoordinate.getRandomCoordinateY(),Grid.CELL_SIZE,Grid.CELL_SIZE);
-        Rectangle pokemon5 = new Rectangle(RandomCoordinate.getRandomCoordinateX(),RandomCoordinate.getRandomCoordinateY(),Grid.CELL_SIZE,Grid.CELL_SIZE);
-
-        Rectangle[] pokemonsArray = new Rectangle[] {pokemon1,pokemon2,pokemon3,pokemon4,pokemon5};
-
-        for(Rectangle poke: pokemonsArray) {
-            poke.setColor(Color.MAGENTA);
-            poke.draw();
-            poke.fill();
-        }
-    }
 }
