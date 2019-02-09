@@ -74,25 +74,20 @@ public class Game implements KeyboardHandler {
                 player.move(0, -Grid.CELL_SIZE);
                 break;
 
+            case KeyboardEvent.KEY_SPACE:
+
+                Rectangle ball = new Rectangle(player.getPosition().getRectangle().getX(),
+                        player.getPosition().getRectangle().getY(), 10, 10);
+                ball.delete();
+                ball.draw();
+               break;
+
         }
 
         grid.drawPlayer(player);
     }
 
 
-    public void checkKeyboardEventBall() {
-
-
-
-        case KeyboardEvent.KEY_SPACE:
-
-        Rectangle ball = new Rectangle(player.getPosition().getRectangle().getX(),
-                player.getPosition().getRectangle().getY(), 10, 10);
-        ball.delete();
-        ball.draw();
-        break;
-
-    }
 
 
     @Override

@@ -28,11 +28,11 @@ public class Grid {
         player.getPosition().getRectangle().fill();
     }
 
-    
 
 
+/*
     public void drawBall(Ball ball) {
         ball.draw();
     }
-
+*/
 }

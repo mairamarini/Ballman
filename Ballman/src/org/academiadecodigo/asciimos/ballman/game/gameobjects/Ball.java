@@ -7,11 +7,10 @@ public class Ball extends GameObjects {
 
     private boolean used;
 
-
-
-
-
-
+    @Override
+    public Position getPosition() {
+        return super.getPosition();
+    }
 
 
     public boolean isUsed() {
