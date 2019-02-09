@@ -43,6 +43,7 @@ public class Game implements KeyboardHandler {
 
             // TODO: 07-02-2019 move all pokemons here!!
 
+
         }
     }
 
@@ -83,6 +84,7 @@ public class Game implements KeyboardHandler {
     private void drawStartingGame() {
         grid.drawGrid();
         grid.drawPlayer(player);
+        grid.drawPokemon();
     }
 
     private KeyboardEvent[] createKeyboardEvents(KeyboardEvent[] keyboardEvents) {
