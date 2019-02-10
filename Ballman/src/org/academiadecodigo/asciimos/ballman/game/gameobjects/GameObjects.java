@@ -10,5 +10,9 @@ public abstract class GameObjects {
         return position;
     }
 
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+
 
 }

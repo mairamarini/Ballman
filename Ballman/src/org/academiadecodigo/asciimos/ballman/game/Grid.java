@@ -1,6 +1,8 @@
 package org.academiadecodigo.asciimos.ballman.game;
 
+import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+
 
 public class Grid {
 
@@ -29,10 +31,11 @@ public class Grid {
     }
 
 
-
-/*
     public void drawBall(Ball ball) {
-        ball.draw();
+        ball.getPosition().getRectangle().fill();
     }
-*/
+
+
+
+
 }

@@ -24,7 +24,8 @@ public class Game implements KeyboardHandler {
     public Game() {
         grid = new Grid();
         player = new Player();
-        ball = new Ball();
+        ball = new Ball(player.getPosition().getRectangle().getX(), player.getPosition().getRectangle().getY());
+
     }
 
     public void startGame() throws InterruptedException {
@@ -78,18 +79,20 @@ public class Game implements KeyboardHandler {
 
             case KeyboardEvent.KEY_SPACE:
 
-                Rectangle ball = new Rectangle(player.getPosition().getRectangle().getX(),
-                        player.getPosition().getRectangle().getY(), 10, 10);
-                ball.delete();
+//               ball.setPosition(player.getPosition());
+                //System.out.println(player.getPosition().getRectangle().getX());
+
+                ball = new Ball(player.getPosition().getRectangle().getX(), player.getPosition().getRectangle().getY());
                 ball.draw();
-               break;
+
+
+
+                break;
 
         }
 
         grid.drawPlayer(player);
     }
-
-
 
 
     @Override
@@ -101,7 +104,7 @@ public class Game implements KeyboardHandler {
     private void drawStartingGame() {
         grid.drawGrid();
         grid.drawPlayer(player);
-        for (int i= 1; i <= numberPokemons; i++) {
+        for (int i = 1; i <= numberPokemons; i++) {
             Pokemon.getNewPokemon(grid);
         }
 

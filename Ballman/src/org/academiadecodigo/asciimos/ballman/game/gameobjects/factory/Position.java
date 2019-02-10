@@ -8,7 +8,7 @@ import java.security.PublicKey;
 public class Position {
 
     private Rectangle rectangle;
-    private Rectangle ball;
+
 
     public Position(int x, int y) {
         rectangle = new Rectangle(10,10, Grid.CELL_SIZE,Grid.CELL_SIZE);
