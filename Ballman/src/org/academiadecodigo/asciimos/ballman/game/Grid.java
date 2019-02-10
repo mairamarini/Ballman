@@ -1,9 +1,9 @@
 package org.academiadecodigo.asciimos.ballman.game;
 
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
+import org.academiadecodigo.asciimos.ballman.game.gameobjects.Pokemon;
+import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.RandomCoordinate;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
-
 
 public class Grid {
 
@@ -17,7 +17,6 @@ public class Grid {
         return rectangle;
     }
 
-
     public Grid() {
         rectangle = new Rectangle(PADDING,PADDING,COLS * CELL_SIZE,ROWS * CELL_SIZE);
     }
@@ -28,7 +27,6 @@ public class Grid {
         rectangle.setColor(Color.YELLOW);
         rectangle.fill();
     }
-
 
 
 }

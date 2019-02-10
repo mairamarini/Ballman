@@ -14,12 +14,11 @@ public class Game implements KeyboardHandler {
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 100;
-    private int numberPokemons = 10;
+    private int numberPokemons = 5;
 
     public Game() {
         grid = new Grid();
         player = new Player();
-
     }
 
     public void startGame() throws InterruptedException {
@@ -51,8 +50,11 @@ public class Game implements KeyboardHandler {
             player.draw();
             player.drawBall();
 
+            Pokemon.movePokemon();
+
             // END OF GAME LOOP
             Thread.sleep(SLEEP);
+
         }
     }
 
@@ -90,7 +92,7 @@ public class Game implements KeyboardHandler {
     @Override
     public void keyPressed(KeyboardEvent keyboardEvent) {
 
-        this.keyboardEvent = keyboardEvent;
+         this.keyboardEvent = keyboardEvent;
     }
 
     private void drawStartingGame() {
@@ -98,8 +100,9 @@ public class Game implements KeyboardHandler {
         player.draw();
         player.initBall();
 
-        for (int i = 1; i <= numberPokemons; i++) {
-            Pokemon.getNewPokemon(grid);
+        //Pokemon[] pokemons = new Pokemon[numberPokemons];
+        for (int i= 1; i <= numberPokemons; i++) {
+            Pokemon.getNewPokemon();
         }
 
     }
