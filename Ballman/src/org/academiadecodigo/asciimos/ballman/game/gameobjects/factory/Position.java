@@ -11,7 +11,7 @@ public class Position {
 
 
     public Position(int x, int y) {
-        rectangle = new Rectangle(10,10, Grid.CELL_SIZE,Grid.CELL_SIZE);
+        rectangle = new Rectangle(x,y, Grid.CELL_SIZE,Grid.CELL_SIZE);
     }
 
     public void setCoordinates(int x, int y) {
@@ -23,6 +23,13 @@ public class Position {
         return rectangle;
     }
 
+    public int getX(){
+        return rectangle.getX();
+    }
+
+    public int getY(){
+        return rectangle.getY();
+    }
 
 
 }

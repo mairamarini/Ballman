@@ -1,6 +1,7 @@
 package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
+import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 
@@ -21,20 +22,12 @@ public class Grid {
         rectangle = new Rectangle(PADDING,PADDING,COLS * CELL_SIZE,ROWS * CELL_SIZE);
     }
 
-    public void drawGrid() {
-        rectangle.draw();
+    public void draw() {
+        //rectangle.draw();
+
+        rectangle.setColor(Color.YELLOW);
+        rectangle.fill();
     }
-
-
-    public void drawPlayer(Player player) {
-        player.getPosition().getRectangle().fill();
-    }
-
-
-    public void drawBall(Ball ball) {
-        ball.getPosition().getRectangle().fill();
-    }
-
 
 
 

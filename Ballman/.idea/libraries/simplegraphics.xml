@@ -1,8 +1,7 @@
 <component name="libraryTable">
-  <library name="lib">
+  <library name="simplegraphics">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/simplegraphics.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/lanterna-2.1.9.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

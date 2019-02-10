@@ -2,20 +2,15 @@ package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Pokemon;
-import org.academiadecodigo.simplegraphics.graphics.Color;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
 
-import java.awt.*;
-
 public class Game implements KeyboardHandler {
 
     private Grid grid;
     private Pokemon[] pokemons;
-    private Ball ball;
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 100;
@@ -24,7 +19,6 @@ public class Game implements KeyboardHandler {
     public Game() {
         grid = new Grid();
         player = new Player();
-        ball = new Ball(player.getPosition().getRectangle().getX(), player.getPosition().getRectangle().getY());
 
     }
 
@@ -41,16 +35,24 @@ public class Game implements KeyboardHandler {
 
         while (true) {
 
+            // UPDATE GAME OBJECTS
             if (keyboardEvent != null) {
                 checkKeyboardEvent();
                 keyboardEvent = null;
             }
 
-            Thread.sleep(SLEEP);
 
             // TODO: 07-02-2019 move all pokemons here!!
 
 
+            // DRAW GAME OBJECTS
+            grid.draw();
+
+            player.draw();
+            player.drawBall();
+
+            // END OF GAME LOOP
+            Thread.sleep(SLEEP);
         }
     }
 
@@ -78,20 +80,10 @@ public class Game implements KeyboardHandler {
                 break;
 
             case KeyboardEvent.KEY_SPACE:
-
-//               ball.setPosition(player.getPosition());
-                //System.out.println(player.getPosition().getRectangle().getX());
-
-                ball = new Ball(player.getPosition().getRectangle().getX(), player.getPosition().getRectangle().getY());
-                ball.draw();
-
-
-
+                player.putBall();
                 break;
 
         }
-
-        grid.drawPlayer(player);
     }
 
 
@@ -102,8 +94,10 @@ public class Game implements KeyboardHandler {
     }
 
     private void drawStartingGame() {
-        grid.drawGrid();
-        grid.drawPlayer(player);
+        grid.draw();
+        player.draw();
+        player.initBall();
+
         for (int i = 1; i <= numberPokemons; i++) {
             Pokemon.getNewPokemon(grid);
         }
