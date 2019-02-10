@@ -25,6 +25,7 @@ public class Grid {
         player.getPosition().getRectangle().fill();
     }
 
+
     public void drawGrid() {
         rectangle.draw();
     }

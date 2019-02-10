@@ -2,10 +2,14 @@ package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Pokemon;
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+
+import java.awt.*;
+import java.security.PrivateKey;
 
 public class Game implements KeyboardHandler {
 
@@ -15,7 +19,7 @@ public class Game implements KeyboardHandler {
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 100;
-    private int numberPokemons = 10;
+    private int numberPokemons = 5;
 
     public Game() {
         grid = new Grid();
@@ -43,8 +47,7 @@ public class Game implements KeyboardHandler {
             Thread.sleep(SLEEP);
 
             // TODO: 07-02-2019 move all pokemons here!!
-
-
+                Pokemon.movePokemon();
         }
     }
 
@@ -85,10 +88,10 @@ public class Game implements KeyboardHandler {
     private void drawStartingGame() {
         grid.drawGrid();
         grid.drawPlayer(player);
+        //Pokemon[] pokemons = new Pokemon[numberPokemons];
         for (int i= 1; i <= numberPokemons; i++) {
-            Pokemon.getNewPokemon(grid);
+              Pokemon.getNewPokemon();
         }
-
     }
 
     private KeyboardEvent[] createKeyboardEvents(KeyboardEvent[] keyboardEvents) {
