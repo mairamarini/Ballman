@@ -17,7 +17,7 @@ public class Game implements KeyboardHandler {
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 100;
-    private int numberPokemons = 5;
+    private int numberPokemons = 10;
 
     public Game() {
         grid = new Grid();
@@ -50,10 +50,29 @@ public class Game implements KeyboardHandler {
 
             // DRAW GAME OBJECTS
             grid.draw();
+            if(player.isDead()) {
+                for (KeyboardEvent k: keyboardEvents) {
+                    keyboard.removeEventListener(k);
+                }
+            }
             player.draw();
 
             for (Pokemon r : pokemons) {
-                r.movePokemon(r.getRectangle());
+                if(r.catched()) {
+                    r.getRectangle().delete();
+                    continue;
+                }
+                r.movePokemon(r.getRectangle(), pokemons);
+                if(r.getRectangle().getX() == player.getPosition().getX() && r.getRectangle().getY() == player.getPosition().getY()) {
+                    player.getPosition().getRectangle().delete();
+                    player.dead();
+
+                }
+
+                if(r.getRectangle().getY() == player.getBall().getPosition().getY() && r.getRectangle().getX() == player.getBall().getPosition().getX()) {
+                    r.isCatched();
+
+                }
             }
 
             // END OF GAME LOOP

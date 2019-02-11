@@ -10,6 +10,7 @@ public class Player implements Movable, Collidable {
 
     private Position position;
     private Ball ball;
+    private boolean dead;
 
 
     public Player() {
@@ -19,6 +20,14 @@ public class Player implements Movable, Collidable {
 
     public Position getPosition() {
         return position;
+    }
+
+    public boolean isDead() {
+        return dead;
+    }
+
+    public void dead() {
+        dead = true;
     }
 
 

@@ -24,7 +24,7 @@ public class Grid {
     public void draw() {
         //rectangle.draw();
 
-        rectangle.setColor(Color.YELLOW);
+        rectangle.setColor(Color.WHITE);
         rectangle.fill();
     }
 
