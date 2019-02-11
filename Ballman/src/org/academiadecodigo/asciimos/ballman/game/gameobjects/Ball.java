@@ -9,7 +9,7 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 public class Ball extends GameObjects{
 
-    //private Position position;
+
     private boolean used = false;
     private Rectangle rectangle;
 

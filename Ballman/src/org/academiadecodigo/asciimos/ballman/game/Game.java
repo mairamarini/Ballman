@@ -2,10 +2,13 @@ package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Pokemon;
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+
+import java.awt.*;
 
 public class Game implements KeyboardHandler {
 
@@ -19,6 +22,7 @@ public class Game implements KeyboardHandler {
     public Game() {
         grid = new Grid();
         player = new Player();
+        pokemons = new Pokemon[numberPokemons];
     }
 
     public void startGame() throws InterruptedException {
@@ -48,7 +52,9 @@ public class Game implements KeyboardHandler {
             grid.draw();
             player.draw();
 
-            Pokemon.movePokemon();
+            for (Pokemon r : pokemons) {
+                r.movePokemon(r.getRectangle());
+            }
 
             // END OF GAME LOOP
             Thread.sleep(SLEEP);
@@ -100,8 +106,8 @@ public class Game implements KeyboardHandler {
         player.initBall();
 
         //Pokemon[] pokemons = new Pokemon[numberPokemons];
-        for (int i= 1; i <= numberPokemons; i++) {
-            Pokemon.getNewPokemon();
+        for (int i= 0; i < numberPokemons; i++) {
+            pokemons[i] = new Pokemon().getNewPokemon();
         }
 
     }
