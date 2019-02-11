@@ -7,30 +7,29 @@ import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 
-public class Ball {
+public class Ball extends GameObjects{
 
-    private Position position;
+    //private Position position;
     private boolean used = false;
     private Rectangle rectangle;
 
-
-    public Ball(Position position) {
-        this.position = position;
-        rectangle = new Rectangle(position.getX(), position.getY(), Grid.CELL_SIZE, Grid.CELL_SIZE);
+    public Ball(Position pos) {
+        super(pos);
+        rectangle = new Rectangle(super.getPosition().getX(), super.getPosition().getY(), Grid.CELL_SIZE, Grid.CELL_SIZE);
     }
 
 
     public Position getPosition() {
-        return position;
+        return super.getPosition();
     }
 
 
     public void setPosition(Position pos) {
-        int dx = pos.getX() - position.getX();
-        int dy = pos.getY() - position.getY();
+        int dx = pos.getX() - super.getPosition().getX();
+        int dy = pos.getY() - super.getPosition().getY();
 
         rectangle.translate(dx, dy);
-        position = pos;
+        super.setPosition(pos);
     }
 
     public boolean isUsed() {

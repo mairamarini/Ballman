@@ -46,9 +46,7 @@ public class Game implements KeyboardHandler {
 
             // DRAW GAME OBJECTS
             grid.draw();
-
             player.draw();
-            player.drawBall();
 
             Pokemon.movePokemon();
 
@@ -82,6 +80,7 @@ public class Game implements KeyboardHandler {
                 break;
 
             case KeyboardEvent.KEY_SPACE:
+                player.drawBall();
                 player.putBall();
                 break;
 

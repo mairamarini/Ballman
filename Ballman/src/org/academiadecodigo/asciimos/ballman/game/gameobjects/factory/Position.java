@@ -29,6 +29,7 @@ public class Position {
     }
 
     public void setCoordinates(int x, int y) {
+        // TODO: 2019-02-11 usar coordenadas ao inves de retangulo. 
         rectangle.delete();
         rectangle = new Rectangle(rectangle.getX() + x,rectangle.getY() + y,Grid.CELL_SIZE,Grid.CELL_SIZE);
     }

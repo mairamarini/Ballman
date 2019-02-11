@@ -10,11 +10,12 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 
 
-public class Pokemon extends GameObjects implements Movable, Collidable {
+public class Pokemon implements Movable, Collidable {
 
     private boolean catched = false;
     private Position position;
     public static Rectangle pokemon;
+
 
     public static Rectangle getNewPokemon() {
 
@@ -79,13 +80,4 @@ public class Pokemon extends GameObjects implements Movable, Collidable {
     }
 
 
-    @Override
-    public Position getPosition() {
-        return super.getPosition();
-    }
-
-    @Override
-    public void setPosition(Position position) {
-        super.setPosition(position);
-    }
 }

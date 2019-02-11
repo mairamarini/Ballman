@@ -6,8 +6,9 @@ public abstract class GameObjects {
 
     private Position position;
 
-
-
+    public GameObjects(Position position) {
+        this.position = position;
+    }
 
     public Position getPosition() {
         return position;
