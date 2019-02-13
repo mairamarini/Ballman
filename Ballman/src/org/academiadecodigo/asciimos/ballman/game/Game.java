@@ -7,6 +7,7 @@ import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 import java.awt.*;
 
@@ -17,7 +18,8 @@ public class Game implements KeyboardHandler {
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 100;
-    private int numberPokemons = 10;
+    private int numberPokemons = 4;
+    Picture gridbackground;
 
     public Game() {
         grid = new Grid();
@@ -71,7 +73,7 @@ public class Game implements KeyboardHandler {
 
                 if(r.getRectangle().getY() == player.getBall().getPosition().getY() && r.getRectangle().getX() == player.getBall().getPosition().getX()) {
                     r.isCatched();
-
+                    System.out.println("Catched one Pokemon");
                 }
             }
 
@@ -120,11 +122,11 @@ public class Game implements KeyboardHandler {
     }
 
     private void drawStartingGame() {
-        grid.draw();
+        gridbackground = new Picture(10 , 10, "floor.png");
+        gridbackground.draw();
         player.draw();
         player.initBall();
 
-        //Pokemon[] pokemons = new Pokemon[numberPokemons];
         for (int i= 0; i < numberPokemons; i++) {
             pokemons[i] = new Pokemon().getNewPokemon();
         }

@@ -5,6 +5,7 @@ import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Objectfact
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Position;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Player implements Movable, Collidable {
 
@@ -58,6 +59,8 @@ public class Player implements Movable, Collidable {
     public void draw() {
         getPosition().getRectangle().setColor(Color.BLACK);
         getPosition().getRectangle().fill();
+        //Picture test = new Picture(getPosition().getRectangle().getX()-15,getPosition().getRectangle().getY()-15,"test.png");
+        //test.draw();
     }
 
     public Ball getBall() {
