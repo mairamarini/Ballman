@@ -8,10 +8,10 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 public class Grid {
 
     private Rectangle rectangle;
-    public static final int COLS = 30;
-    public static final int ROWS = 30;
+    public static final int COLS = 12;
+    public static final int ROWS = 12;
     public static final int PADDING = 10;
-    public static final int CELL_SIZE = 20;
+    public static final int CELL_SIZE = 64;
 
     public Rectangle getRectangle() {
         return rectangle;

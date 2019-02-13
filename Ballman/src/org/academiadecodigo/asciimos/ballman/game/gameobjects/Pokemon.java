@@ -10,22 +10,18 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 
 
-public class Pokemon implements Movable, Collidable {
+public class Pokemon implements Collidable {
 
     private boolean catched = false;
-    private Position position;
-    public Rectangle rectangle;
-
+    //private Position position;
+    private Rectangle rectangle;
 
 
     public Pokemon getNewPokemon() {
 
         rectangle = new Rectangle(RandomCoordinate.getRandomCoordinateX(), RandomCoordinate.getRandomCoordinateY(), Grid.CELL_SIZE, Grid.CELL_SIZE);
-
         rectangle.setColor(Color.MAGENTA);
-        rectangle.draw();
         rectangle.fill();
-        //System.out.println("x: " + rectangle.getX() + " y: " + rectangle.getY());
 
         return this;
 
@@ -44,17 +40,11 @@ public class Pokemon implements Movable, Collidable {
         return rectangle;
     }
 
-    @Override
-    public void move(int dx, int dy) {
-    }
-
-    //@Override
     public void movePokemon(Rectangle rectangle, Pokemon[] pokemons) {
-        //System.out.println("x: " + rectangle.getX() + " y: " + rectangle.getY());
 
         int direction = (int) (Math.random() * 4);
 
-         if(this.collide(pokemons,direction) == false) {
+         if(!this.collide(pokemons,direction)) {
              return;
          }
 
@@ -79,7 +69,6 @@ public class Pokemon implements Movable, Collidable {
                 if (rectangle.getX() >= Grid.CELL_SIZE) {
                     rectangle.translate(-Grid.CELL_SIZE, 0);
                 }
-                //rectangle.translate(Grid.CELL_SIZE, 0);
                 break;
 
 
@@ -87,7 +76,6 @@ public class Pokemon implements Movable, Collidable {
                 if (rectangle.getY() >= Grid.CELL_SIZE) {
                     rectangle.translate(0,-Grid.CELL_SIZE);
                 }
-                //rectangle.translate(0,-Grid.CELL_SIZE);
                 break;
 
             }

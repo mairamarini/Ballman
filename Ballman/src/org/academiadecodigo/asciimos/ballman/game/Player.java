@@ -1,7 +1,7 @@
 package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Objectfactory;
+import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.ObjectFactory;
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Position;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
@@ -14,7 +14,7 @@ public class Player implements Movable, Collidable {
 
 
     public Player() {
-        position = Objectfactory.getPosition();
+        position = ObjectFactory.getPosition();
         ball = new Ball(getPosition());
     }
 
@@ -56,6 +56,7 @@ public class Player implements Movable, Collidable {
     }
 
     public void draw() {
+
         getPosition().getRectangle().setColor(Color.BLACK);
         getPosition().getRectangle().fill();
     }
