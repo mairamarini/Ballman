@@ -8,12 +8,12 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 public class Position {
 
     //private Rectangle rectangle;
-    private int col;
-    private int row;
+    //private int col;
+    //private int row;
 
     private Picture rectangle;
 
-
+/*
     public int getCol() {
         return this.col;
     }
@@ -27,11 +27,12 @@ public class Position {
         this.col = (int) Math.floor((Math.random() * Grid.COLS) * Grid.CELL_SIZE);
         this.row = (int) Math.floor((Math.random() * Grid.ROWS) * Grid.CELL_SIZE);
     }
+    */
 
     public Position(int x, int y) {
 
         //rectangle = new Rectangle(x,y, Grid.CELL_SIZE,Grid.CELL_SIZE);
-        rectangle = new Picture(x, y, "image.png");
+        rectangle = new Picture(x, y, "player_down.png");
     }
 
     public void setCoordinates(int x, int y, KeyboardEvent keyboardEvent) {

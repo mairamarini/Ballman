@@ -17,7 +17,7 @@ public class Game implements KeyboardHandler {
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 200;
-    private int numberPokemons = 5;
+    private int numberPokemons = 1;
     private Picture bg;
 
     public Game() {
@@ -31,6 +31,8 @@ public class Game implements KeyboardHandler {
 
         Keyboard keyboard = new Keyboard(this);
         KeyboardEvent[] keyboardEvents = new KeyboardEvent[Directions.getSize()];
+
+        int counter = 0;
 
         keyboardEvents = createKeyboardEvents(keyboardEvents);
 
@@ -72,11 +74,25 @@ public class Game implements KeyboardHandler {
                         && pokemon.getRectangle().getY() == player.getPosition().getY()) {
                     player.getPosition().getRectangle().delete();
                     player.dead();
+                    new Picture(10, 10, "gameOver.jpg").draw();
+                    return;
                 }
 
                 if(player.getBall() != null && pokemon.getRectangle().getY() == player.getBall().getPosition().getY()
                         && pokemon.getRectangle().getX() == player.getBall().getPosition().getX()) {
                     pokemon.isCatched();
+                    for (Pokemon p : pokemons) {
+                        if(p.catched()) {
+                            counter++;
+                        }
+                        if(counter == pokemons.length) {
+                            new Picture(10, 10, "winner.jpg").draw();
+                            return;
+                        } else {
+                            counter = 0;
+                        }
+                    }
+
                     player.getBall().deleteBall();
                 }
             }
@@ -107,7 +123,7 @@ public class Game implements KeyboardHandler {
                 break;
 
             case KeyboardEvent.KEY_UP:
-                player.move(0, -Grid.CELL_SIZE,keyboardEvent\);
+                player.move(0, -Grid.CELL_SIZE,keyboardEvent);
                 break;
 
             case KeyboardEvent.KEY_SPACE:
