@@ -5,6 +5,9 @@ import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
+import org.academiadecodigo.simplegraphics.pictures.Picture;
+
+import java.awt.*;
 
 
 public class Game implements KeyboardHandler {
@@ -13,10 +16,12 @@ public class Game implements KeyboardHandler {
     private Pokemon[] pokemons;
     private Player player;
     private KeyboardEvent keyboardEvent;
-    private static final int SLEEP = 100;
+    private static final int SLEEP = 200;
     private int numberPokemons = 5;
+    private Picture bg;
 
     public Game() {
+        bg = new Picture(Grid.PADDING, Grid.PADDING, "floor.jpg");
         grid = new Grid();
         player = new Player();
         pokemons = new Pokemon[numberPokemons];
@@ -55,23 +60,24 @@ public class Game implements KeyboardHandler {
             }
             player.draw();
 
-            for (Pokemon r : pokemons) {
-                if(r.catched()) {
-                    r.getRectangle().delete();
+            for (Pokemon pokemon : pokemons) {
+                if(pokemon.catched()) {
+                    pokemon.getRectangle().delete();
                     continue;
                 }
-                r.movePokemon(r.getRectangle(), pokemons);
-                if(r.getRectangle().getX() == player.getPosition().getX()
-                        && r.getRectangle().getY() == player.getPosition().getY()) {
+
+                pokemon.movePokemon(pokemon.getRectangle(), pokemons);
+
+                if(pokemon.getRectangle().getX() == player.getPosition().getX()
+                        && pokemon.getRectangle().getY() == player.getPosition().getY()) {
                     player.getPosition().getRectangle().delete();
                     player.dead();
-
                 }
 
-                if(r.getRectangle().getY() == player.getBall().getPosition().getY()
-                        && r.getRectangle().getX() == player.getBall().getPosition().getX()) {
-                    r.isCatched();
-
+                if(player.getBall() != null && pokemon.getRectangle().getY() == player.getBall().getPosition().getY()
+                        && pokemon.getRectangle().getX() == player.getBall().getPosition().getX()) {
+                    pokemon.isCatched();
+                    player.getBall().deleteBall();
                 }
             }
 
@@ -105,10 +111,12 @@ public class Game implements KeyboardHandler {
                 break;
 
             case KeyboardEvent.KEY_SPACE:
-                player.drawBall();
+                if(player.getBall().isUsed()) {
+                    player.getBall().deleteBall();
+                }
+
                 player.putBall();
                 break;
-
         }
     }
 
@@ -121,11 +129,12 @@ public class Game implements KeyboardHandler {
 
     private void drawStartingGame() {
         grid.draw();
+        bg.draw();
         player.draw();
-        player.initBall();
+        //player.initBall();
 
         for (int i= 0; i < numberPokemons; i++) {
-            pokemons[i] = new Pokemon().getNewPokemon();
+            pokemons[i] = new Pokemon();
         }
 
     }

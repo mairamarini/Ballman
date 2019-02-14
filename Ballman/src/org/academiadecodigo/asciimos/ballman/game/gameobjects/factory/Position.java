@@ -6,10 +6,11 @@ import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 public class Position {
 
-    private Rectangle rectangle;
+    //private Rectangle rectangle;
     private int col;
     private int row;
 
+    private Picture rectangle;
 
 
     public int getCol() {
@@ -28,17 +29,19 @@ public class Position {
 
     public Position(int x, int y) {
 
-        rectangle = new Rectangle(x,y, Grid.CELL_SIZE,Grid.CELL_SIZE);
+        //rectangle = new Rectangle(x,y, Grid.CELL_SIZE,Grid.CELL_SIZE);
+        rectangle = new Picture(x, y, "image.png");
     }
 
     public void setCoordinates(int x, int y) {
         // TODO: 2019-02-11 usar coordenadas ao inves de retangulo.
 
         rectangle.delete();
-        rectangle = new Rectangle(rectangle.getX() + x,rectangle.getY() + y,Grid.CELL_SIZE,Grid.CELL_SIZE);
+        rectangle = new Picture(rectangle.getX() + x,rectangle.getY() + y, "image.png");
+
     }
 
-    public Rectangle getRectangle() {
+    public Picture getRectangle() {
         return rectangle;
     }
 

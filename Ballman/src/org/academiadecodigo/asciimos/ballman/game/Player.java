@@ -14,8 +14,9 @@ public class Player implements Movable, Collidable {
 
 
     public Player() {
-        position = ObjectFactory.getPosition();
-        ball = new Ball(getPosition());
+        position = new Position(10,10);
+        ball = new Ball(position);
+        ball.isUsed();
     }
 
     public Position getPosition() {
@@ -57,8 +58,8 @@ public class Player implements Movable, Collidable {
 
     public void draw() {
 
-        getPosition().getRectangle().setColor(Color.BLACK);
-        getPosition().getRectangle().fill();
+        //getPosition().getRectangle().setColor(Color.BLACK);
+        getPosition().getRectangle().draw();
     }
 
     public Ball getBall() {
@@ -70,7 +71,9 @@ public class Player implements Movable, Collidable {
     }
 
     public void putBall() {
-        ball.setPosition(new Position(position.getX(), position.getY()));
+        ball = new Ball(new Position(position.getX(), position.getY()));
+        ball.draw();
+        ball.useBall();
     }
 
     public void initBall() {

@@ -32,7 +32,7 @@ public class Ball extends GameObjects{
         super.setPosition(pos);
     }
 
-    /*
+
     public boolean isUsed() {
         return used;
     }
@@ -40,7 +40,7 @@ public class Ball extends GameObjects{
     public void useBall() {
         used = true;
     }
-    */
+
 
     public void draw() {
         pic.draw();
@@ -50,6 +50,7 @@ public class Ball extends GameObjects{
 
     public void deleteBall() {
         pic.delete();
+        used = false;
         //rectangle.delete();
     }
 }
