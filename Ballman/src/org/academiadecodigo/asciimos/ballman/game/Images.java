@@ -5,7 +5,14 @@ public enum Images {
     QUIM ("quim.png"),
     ZE ("ze.png"),
     FATIMA("fatima.png"),
-    TO("to.png");
+    TO("to.png"),
+    JAO("jao.png"),
+    MARIA("maria.png"),
+    SIDONIO("sidonio.png"),
+    TONY("tony.png"),
+    TOY("toy.png"),
+    ARSENIO("arsenio.png"),
+    RUTMARLENE("rutMarlene.png");
 
     private String path;
 

@@ -17,7 +17,7 @@ public class Game implements KeyboardHandler {
     private Player player;
     private KeyboardEvent keyboardEvent;
     private static final int SLEEP = 200;
-    private int numberPokemons = 1;
+    private int numberPokemons = 5;
     private Picture bg;
 
     public Game() {

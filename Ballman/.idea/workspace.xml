@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81a54953-9b75-45c0-a8b4-36a6c12e79fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/floor.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resources/floor.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/floor2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pikachu (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pikachu (2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pikachu (3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/pikachu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/player_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/player_left.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/player_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/player_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/player_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/player_down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/player_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/player_up.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Images.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Images.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+            <state relative-caret-position="40">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -104,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Images.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="210">
+              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
                 <element signature="e#463#464#0" expanded="true" />
                 <element signature="e#484#485#0" expanded="true" />
@@ -143,12 +136,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Ball.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Grid.java" />
-        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Images.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/Pokemon.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Player.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Movable.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/gameobjects/factory/Position.java" />
         <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java" />
+        <option value="$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Images.java" />
       </list>
     </option>
   </component>
@@ -225,7 +218,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550171606576" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550173658383" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -276,13 +269,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12184000" />
+    <option name="totallyTimeSpent" value="13742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="982" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49916247" visible="true" weight="0.24973376" />
-      <window_info id="Structure" order="1" sideWeight="0.5008375" side_tool="true" visible="true" weight="0.24973376" />
+      <window_info id="Structure" order="1" sideWeight="0.5008375" side_tool="true" weight="0.24973376" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -364,17 +358,6 @@
     <entry file="file://$PROJECT_DIR$/resources/fatima.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Images.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding>
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Movable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -446,8 +429,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+        <state relative-caret-position="40">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/asciimos/ballman/game/Images.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#484#485#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
