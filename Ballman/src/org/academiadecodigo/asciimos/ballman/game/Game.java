@@ -95,19 +95,19 @@ public class Game implements KeyboardHandler {
 
         switch (keyboardEvent.getKey()) {
             case KeyboardEvent.KEY_RIGHT:
-                player.move(Grid.CELL_SIZE, 0);
+                player.move(Grid.CELL_SIZE, 0,keyboardEvent);
                 break;
 
             case KeyboardEvent.KEY_LEFT:
-                player.move(-Grid.CELL_SIZE, 0);
+                player.move(-Grid.CELL_SIZE, 0,keyboardEvent);
                 break;
 
             case KeyboardEvent.KEY_DOWN:
-                player.move(0, Grid.CELL_SIZE);
+                player.move(0, Grid.CELL_SIZE,keyboardEvent);
                 break;
 
             case KeyboardEvent.KEY_UP:
-                player.move(0, -Grid.CELL_SIZE);
+                player.move(0, -Grid.CELL_SIZE,keyboardEvent\);
                 break;
 
             case KeyboardEvent.KEY_SPACE:

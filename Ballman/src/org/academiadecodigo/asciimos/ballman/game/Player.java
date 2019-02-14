@@ -33,8 +33,8 @@ public class Player implements Movable, Collidable {
 
 
     @Override
-    public void move(int dx, int dy) {
-        position.setCoordinates(dx, dy);
+    public void move(int dx, int dy, KeyboardEvent keyboardEvent) {
+        position.setCoordinates(dx, dy, keyboardEvent);
     }
 
     @Override
