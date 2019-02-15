@@ -1,7 +1,7 @@
 package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Position;
+import org.academiadecodigo.asciimos.ballman.game.gameobjects.Position;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 
 public class Player implements Movable, Collidable {

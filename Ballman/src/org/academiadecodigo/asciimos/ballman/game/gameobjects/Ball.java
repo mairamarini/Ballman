@@ -1,7 +1,6 @@
 package org.academiadecodigo.asciimos.ballman.game.gameobjects;
 
 
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Position;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 
 

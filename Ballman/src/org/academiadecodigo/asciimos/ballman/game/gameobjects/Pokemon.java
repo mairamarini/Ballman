@@ -1,7 +1,6 @@
 package org.academiadecodigo.asciimos.ballman.game.gameobjects;
 
 import org.academiadecodigo.asciimos.ballman.game.*;
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.RandomCoordinate;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
 

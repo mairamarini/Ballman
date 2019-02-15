@@ -1,4 +1,4 @@
-package org.academiadecodigo.asciimos.ballman.game.gameobjects.factory;
+package org.academiadecodigo.asciimos.ballman.game.gameobjects;
 
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
