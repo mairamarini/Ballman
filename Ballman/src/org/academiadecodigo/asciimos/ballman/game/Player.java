@@ -1,9 +1,7 @@
 package org.academiadecodigo.asciimos.ballman.game;
 
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.Ball;
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.ObjectFactory;
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Position;
-import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 
 public class Player implements Movable, Collidable {
@@ -42,32 +40,26 @@ public class Player implements Movable, Collidable {
         switch (keyboardEvent.getKey()) {
 
             case KeyboardEvent.KEY_RIGHT:
-                return position.getRectangle().getX() > grid.getRectangle().getWidth() - Grid.CELL_SIZE;
+                return position.getPicture().getX() > grid.getRectangle().getWidth() - Grid.CELL_SIZE;
 
             case KeyboardEvent.KEY_LEFT:
-                return position.getRectangle().getX() <= Grid.PADDING;
+                return position.getPicture().getX() <= Grid.PADDING;
 
             case KeyboardEvent.KEY_DOWN:
-                return position.getRectangle().getY() > grid.getRectangle().getHeight() - Grid.CELL_SIZE;
+                return position.getPicture().getY() > grid.getRectangle().getHeight() - Grid.CELL_SIZE;
 
             case KeyboardEvent.KEY_UP:
-                return position.getRectangle().getY() <= Grid.PADDING;
+                return position.getPicture().getY() <= Grid.PADDING;
         }
         return false;
     }
 
     public void draw() {
-
-        //getPosition().getRectangle().setColor(Color.BLACK);
-        getPosition().getRectangle().draw();
+        getPosition().getPicture().draw();
     }
 
     public Ball getBall() {
         return ball;
-    }
-
-    public void drawBall() {
-        ball.draw();
     }
 
     public void putBall() {
@@ -76,7 +68,4 @@ public class Player implements Movable, Collidable {
         ball.useBall();
     }
 
-    public void initBall() {
-        putBall();
-    }
 }

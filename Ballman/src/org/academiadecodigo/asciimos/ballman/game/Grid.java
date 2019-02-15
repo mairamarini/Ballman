@@ -1,7 +1,5 @@
 package org.academiadecodigo.asciimos.ballman.game;
 
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.Pokemon;
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.RandomCoordinate;
 import org.academiadecodigo.simplegraphics.graphics.Color;
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
@@ -22,8 +20,6 @@ public class Grid {
     }
 
     public void draw() {
-        //rectangle.draw();
-
         rectangle.setColor(Color.WHITE);
         rectangle.fill();
     }

@@ -1,14 +1,9 @@
 package org.academiadecodigo.asciimos.ballman.game.gameobjects;
 
 import org.academiadecodigo.asciimos.ballman.game.*;
-import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.Position;
 import org.academiadecodigo.asciimos.ballman.game.gameobjects.factory.RandomCoordinate;
-import org.academiadecodigo.simplegraphics.graphics.Color;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.pictures.Picture;
-
-import javax.print.DocFlavor;
 
 
 public class Pokemon implements Collidable {
@@ -38,7 +33,7 @@ public class Pokemon implements Collidable {
         return rectangle;
     }
 
-    public void movePokemon(Picture rectangle, Pokemon[] pokemons) {
+    public void movePokemon(Picture rectangle) {
 
         int random = (int) (Math.random() * 100);
         int newDirection;
@@ -97,6 +92,7 @@ public class Pokemon implements Collidable {
         return false;
     }
 
+    /*
     private boolean collide(Pokemon[] pokemons, int direction) {
 
         switch (direction) {
@@ -134,5 +130,5 @@ public class Pokemon implements Collidable {
         return false;
     }
 
-
+*/
 }
