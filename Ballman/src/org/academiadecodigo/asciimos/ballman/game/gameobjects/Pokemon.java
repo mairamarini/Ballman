@@ -51,11 +51,11 @@ public class Pokemon implements Collidable {
                     break;
                 }
                 rectangle.translate(Grid.CELL_SIZE, 0);
-            break;
+                break;
 
             case 1: // MOVE DOWN
                 if (rectangle.getY() >= Grid.ROWS * Grid.CELL_SIZE - Grid.CELL_SIZE) {
-                    rectangle.translate(0,-Grid.CELL_SIZE);
+                    rectangle.translate(0, -Grid.CELL_SIZE);
                     break;
                 }
                 rectangle.translate(0, Grid.CELL_SIZE);
@@ -73,61 +73,23 @@ public class Pokemon implements Collidable {
 
             case 3: // MOVE UP
                 if (rectangle.getY() >= Grid.CELL_SIZE) {
-                    rectangle.translate(0,-Grid.CELL_SIZE);
+                    rectangle.translate(0, -Grid.CELL_SIZE);
                     break;
                 }
-                rectangle.translate(0,Grid.CELL_SIZE);
+                rectangle.translate(0, Grid.CELL_SIZE);
                 break;
 
-            }
-
-         this.direction = newDirection;
-
         }
+
+        this.direction = newDirection;
+
+    }
 
 
     @Override
-    public boolean collide(Grid grid, KeyboardEvent keyboardEvent)  {
+    public boolean collide(Grid grid, KeyboardEvent keyboardEvent) {
         return false;
     }
 
-    /*
-    private boolean collide(Pokemon[] pokemons, int direction) {
 
-        switch (direction) {
-
-            case 0:     //move right
-                for (Pokemon p : pokemons) {
-                       if(this.rectangle.getX() + Grid.CELL_SIZE == p.rectangle.getX()) {
-                       return true;
-                   }
-                }
-                break;
-            case 1:     // move down
-                for (Pokemon p:pokemons) {
-                    if(this.rectangle.getY() + Grid.CELL_SIZE == p.rectangle.getY()) {
-                        return true;
-                    }
-                }
-                break;
-            case 2:    //move left
-                for (Pokemon p:pokemons ) {
-                  if(this.rectangle.getX() - Grid.CELL_SIZE == p.rectangle.getX()) {
-                      return true;
-                  }
-                }
-                break;
-            case 3:      //move up
-                for (Pokemon p:pokemons ) {
-                        if(this.rectangle.getY() - Grid.CELL_SIZE == p.rectangle.getY()) {
-                            return true;
-                        }
-                }
-                break;
-        }
-
-        return false;
-    }
-
-*/
 }

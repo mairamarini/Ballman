@@ -8,7 +8,7 @@ public class Position {
     private Picture picture;
 
     public Position(int x, int y) {
-        picture = new Picture(x, y, "player_down.png");
+        picture = new Picture(x, y, "resources/player_down.png");
     }
 
     public void setCoordinates(int x, int y, KeyboardEvent keyboardEvent) {
@@ -16,22 +16,22 @@ public class Position {
         switch (keyboardEvent.getKey()) {
             case KeyboardEvent.KEY_DOWN:
                 picture.delete();
-                picture = new Picture(picture.getX() + x, picture.getY() + y, "player_down.png");
+                picture = new Picture(picture.getX() + x, picture.getY() + y, "resources/player_down.png");
 
                 break;
             case KeyboardEvent.KEY_LEFT:
                 picture.delete();
-                picture = new Picture(picture.getX() + x, picture.getY() + y, "player_left.png");
+                picture = new Picture(picture.getX() + x, picture.getY() + y, "resources/player_left.png");
 
                 break;
             case KeyboardEvent.KEY_RIGHT:
                 picture.delete();
-                picture = new Picture(picture.getX() + x, picture.getY() + y, "player_right.png");
+                picture = new Picture(picture.getX() + x, picture.getY() + y, "resources/player_right.png");
 
                 break;
             case KeyboardEvent.KEY_UP:
                 picture.delete();
-                picture = new Picture(picture.getX() + x, picture.getY() + y, "player_up.png");
+                picture = new Picture(picture.getX() + x, picture.getY() + y, "resources/player_up.png");
 
                 break;
         }

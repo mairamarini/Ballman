@@ -2,17 +2,17 @@ package org.academiadecodigo.asciimos.ballman.game;
 
 public enum Images {
 
-    QUIM ("quim.png"),
-    ZE ("ze.png"),
-    FATIMA("fatima.png"),
-    TO("to.png"),
-    JAO("jao.png"),
-    MARIA("maria.png"),
-    SIDONIO("sidonio.png"),
-    TONY("tony.png"),
-    TOY("toy.png"),
-    ARSENIO("arsenio.png"),
-    RUTMARLENE("rutMarlene.png");
+    QUIM ("resources/quim.png"),
+    ZE ("resources/ze.png"),
+    FATIMA("resources/fatima.png"),
+    TO("resources/to.png"),
+    JAO("resources/jao.png"),
+    MARIA("resources/maria.png"),
+    SIDONIO("resources/sidonio.png"),
+    TONY("resources/tony.png"),
+    TOY("resources/toy.png"),
+    ARSENIO("resources/arsenio.png"),
+    RUTMARLENE("resources/rutMarlene.png");
 
     private String path;
 

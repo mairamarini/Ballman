@@ -45,6 +45,7 @@
                 <include name="**/${resources.dir}/**"/>
             </fileset>
         </jar>
+        <echo message="${resources.dir}"/>
     </target>
 
 </project>

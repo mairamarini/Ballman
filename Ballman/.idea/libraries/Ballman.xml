@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Ballman">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/build/Ballman.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

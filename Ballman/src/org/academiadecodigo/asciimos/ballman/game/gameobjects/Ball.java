@@ -12,7 +12,7 @@ public class Ball extends GameObjects{
 
     public Ball(Position pos) {
         super(pos);
-        pic = new Picture(super.getPosition().getX() + 17, super.getPosition().getY() + 22, "ball.png");
+        pic = new Picture(super.getPosition().getX() + 17, super.getPosition().getY() + 22, "resources/ball.png");
     }
 
     public Position getPosition() {

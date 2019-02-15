@@ -20,7 +20,7 @@ public class Game implements KeyboardHandler {
     private boolean begin;
 
     public Game() {
-        bg = new Picture(Grid.PADDING, Grid.PADDING, "floor.jpg");
+        bg = new Picture(Grid.PADDING, Grid.PADDING, "resources/floor.jpg");
         grid = new Grid();
         player = new Player();
         pokemons = new Pokemon[numberPokemons];
@@ -37,12 +37,12 @@ public class Game implements KeyboardHandler {
 
         keyboard = createListenerEvents(keyboard, keyboardEvents);
 
-        new Picture(10, 10, "MENU FINAL.png").draw();
+        new Picture(10, 10, "resources/MENU_FINAL.png").draw();
 
 
         while (!begin) {
 
-            System.out.println();
+            Thread.sleep(0);
         }
 
         drawStartingGame();
@@ -76,8 +76,8 @@ public class Game implements KeyboardHandler {
                         && pokemon.getRectangle().getY() == player.getPosition().getY()) {
                     player.getPosition().getPicture().delete();
                     player.dead();
-                    new Picture(Grid.PADDING, Grid.PADDING, "floor.jpg").draw();
-                    new Picture(10, 10, "lindinha.png").draw();
+                    new Picture(Grid.PADDING, Grid.PADDING, "resources/floor.jpg").draw();
+                    new Picture(10, 10, "resources/lindinha.png").draw();
                     return;
                 }
 
@@ -89,7 +89,7 @@ public class Game implements KeyboardHandler {
                             counter++;
                         }
                         if (counter == pokemons.length) {
-                            new Picture(10, 10, "Winner.png").draw();
+                            new Picture(10, 10, "resources/Winner.png").draw();
                             return;
                         } else {
                             counter = 0;
