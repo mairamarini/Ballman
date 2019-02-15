@@ -122,7 +122,7 @@ public class Game implements KeyboardHandler {
     }
 
     private void drawStartingGame() {
-        gridbackground = new Picture(10 , 10, "floor.png");
+        gridbackground = new Picture(10 , 10, "floor.jpg");
         gridbackground.draw();
         player.draw();
         player.initBall();
